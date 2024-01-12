@@ -97,6 +97,7 @@ function App() {
 						</li>
 
 						<li>
+							<a href='#'></a>
 							<a
 								href='#'
 								className='text-xl font-bold'>
@@ -415,25 +416,103 @@ function App() {
 			</aside>
 
 			<footer className='flex flex-col grid-cols-3 gap-4 px-4 py-8 text-sm text-white bg-slate-900 sm:grid'>
-				<ul className='flex flex-col gap-2 pb-3 border-b-2 border-slate-300 sm:border-none'>
-					<li>TARGETAS DE REGALO</li>
-					<li>BUSCAR TIENDA</li>
-					<li>HACERSE MIEMBRO</li>
-					<li>NEW STYLE X GUCCI</li>
-					<li>NEW STYLE JOURNAL</li>
-					<li>ENVÍANOS TUS COMENTARIOS</li>
+				<ul className='pb-3 space-y-2 border-b-2 border-slate-300 sm:border-none'>
+					<li>
+						<a
+							href='#'
+							className='hover:text-white'>
+							TARGETAS DE REGALO
+						</a>
+					</li>
+					<li>
+						<a
+							href='#'
+							className='hover:text-white'>
+							BUSCAR TIENDA
+						</a>
+					</li>
+					<li>
+						<a
+							href='#'
+							className='hover:text-white'>
+							HACERSE MIEMBRO
+						</a>
+					</li>
+					<li>
+						<a
+							href='#'
+							className='hover:text-white'>
+							NEW STYLE X GUCCI
+						</a>
+					</li>
+					<li>
+						<a
+							href='#'
+							className='hover:text-white'>
+							NEW STYLE JOURNAL
+						</a>
+					</li>
+					<li>
+						<a
+							href='#'
+							className='hover:text-white'>
+							ENVÍANOS TUS COMENTARIOS
+						</a>
+					</li>
 				</ul>
 
 				<ul className='flex justify-between gap-2 sm:flex-col'>
 					<li>OBTENER AYUDA</li>
 					<ul className='flex-col hidden gap-1 sm:flex text-slate-400 '>
-						<li>Esta del pedido</li>
-						<li>Envío y entrega</li>
-						<li>Devoluciones</li>
-						<li>Cancelación del pedido</li>
-						<li>Opciones de pago</li>
-						<li>Saldo de la targeta de regalo</li>
-						<li>Comunícate con nosotros</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Esta del pedido
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Envío y entrega
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Devoluciones
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Cancelación del pedido
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Opciones de pago
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Saldo de la targeta de regalo
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Comunícate con nosotros
+							</a>
+						</li>
 					</ul>
 					{isOpenGetHelp ? (
 						<svg
@@ -468,25 +547,97 @@ function App() {
 					)}
 				</ul>
 				{isOpenGetHelp && (
-					<ul className='flex flex-col gap-1 text-slate-400 sm:hidden'>
-						<li>Esta del pedido</li>
-						<li>Envío y entrega</li>
-						<li>Devoluciones</li>
-						<li>Cancelación del pedido</li>
-						<li>Opciones de pago</li>
-						<li>Saldo de la targeta de regalo</li>
-						<li>Comunícate con nosotros</li>
+					<ul className='space-y-1.5 text-slate-400 sm:hidden'>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Esta del pedido
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Envío y entrega
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Devoluciones
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Cancelación del pedido
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Opciones de pago
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Saldo de la targeta de regalo
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Comunícate con nosotros
+							</a>
+						</li>
 					</ul>
 				)}
 
 				<ul className='flex justify-between gap-2 sm:flex-col sm:justify-start'>
 					<li>ACERCA DE NEW STYLE</li>
-					<ul className='flex-col hidden gap-1 sm:flex text-slate-400'>
-						<li>Noticias</li>
-						<li>Empleo</li>
-						<li>Inversiones</li>
-						<li>Propósito</li>
-						<li>Sustentabilidad</li>
+					<ul className='space-y-1.5 hidden sm:block text-slate-400'>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Noticias
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Empleo
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Inversiones
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Propósito
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Sustentabilidad
+							</a>
+						</li>
 					</ul>
 
 					{isOpenAboutUs ? (
@@ -522,23 +673,83 @@ function App() {
 					)}
 				</ul>
 				{isOpenAboutUs && (
-					<ul className='flex flex-col gap-1 text-slate-400 sm:hidden'>
-						<li>Noticias</li>
-						<li>Empleo</li>
-						<li>Inversiones</li>
-						<li>Propósito</li>
-						<li>Sustentabilidad</li>
+					<ul className='space-y-1.5 text-slate-400 sm:hidden'>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Noticias
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Empleo
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Inversiones
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Propósito
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Sustentabilidad
+							</a>
+						</li>
 					</ul>
 				)}
 
 				<ul className='flex justify-between gap-2 sm:flex-col'>
 					<li>PROMOCIONES Y DESCUENTOS</li>
-					<ul className='flex-col hidden gap-1 sm:flex text-slate-400'>
-						<li>Estudiantes</li>
-						<li>Military</li>
-						<li>Maestros</li>
-						<li>First REsponders & Medical Professionals</li>
-						<li>Cumpleaños</li>
+					<ul className='space-y-1.5 hidden sm:block text-slate-400'>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Estudiantes
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Military
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Maestros
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								First REsponders & Medical Professionals
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Cumpleaños
+							</a>
+						</li>
 					</ul>
 					{isOpenPromotionsDiscounts ? (
 						<svg
@@ -573,17 +784,48 @@ function App() {
 					)}
 				</ul>
 				{isOpenPromotionsDiscounts && (
-					<ul className='flex flex-col gap-1 text-slate-400 sm:hidden'>
-						<li>Estudiantes</li>
-						<li>Military</li>
-						<li>Maestros</li>
-						<li>First REsponders & Medical Professionals</li>
-						<li>Cumpleaños</li>
+					<ul className='space-y-1.5 text-slate-400 sm:hidden'>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Estudiantes
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Military
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Maestros
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								First REsponders & Medical Professionals
+							</a>
+						</li>
+						<li>
+							<a
+								href='#'
+								className='hover:text-white'>
+								Cumpleaños
+							</a>
+						</li>
 					</ul>
 				)}
 
 				<ul className='flex gap-3'>
 					<li>
+						<a href='#'></a>
 						<a
 							href='https://www.facebook.com/jeffersondavid27'
 							target='_blank'>
@@ -594,6 +836,7 @@ function App() {
 						</a>
 					</li>
 					<li>
+						<a href='#'></a>
 						<a
 							href='https://www.instagram.com/soyjeffersondavid/'
 							target='_blank'>
@@ -604,6 +847,7 @@ function App() {
 						</a>
 					</li>
 					<li>
+						<a href='#'></a>
 						<a
 							href='https://www.linkedin.com/in/jefferson-david-964083227/'
 							target='_blank'>
@@ -614,6 +858,7 @@ function App() {
 						</a>
 					</li>
 					<li>
+						<a href='#'></a>
 						<a
 							href='https://api.whatsapp.com/send?phone=+593XXX-XXX-XXX'
 							target='_blank'>
@@ -625,39 +870,77 @@ function App() {
 					</li>
 				</ul>
 
+				<ul className='space-y-1.5 text-slate-400'>
+					<li>
+						<a
+							href='#'
+							className='hover:text-white'>
+							Guias
+						</a>
+					</li>
+					<li>
+						<a
+							href='#'
+							className='hover:text-white'>
+							Términos de venta
+						</a>
+					</li>
+					<li>
+						<a
+							href='#'
+							className='hover:text-white'>
+							Términos de uso
+						</a>
+					</li>
+					<li>
+						<a
+							href='#'
+							className='hover:text-white'>
+							Política de privacidad de NEW STYLE
+						</a>
+					</li>
+					<li>
+						<a
+							href='#'
+							className='hover:text-white'>
+							Tus selecciones de privacidad
+						</a>
+					</li>
+					<li>
+						<a
+							href='#'
+							className='hover:text-white'>
+							EC. Supply Chains Act
+						</a>
+					</li>
+				</ul>
+
 				<div>
-					<svg
-						xmlns='http://www.w3.org/2000/svg'
-						fill='none'
-						viewBox='0 0 24 24'
-						stroke-width='1.5'
-						stroke='currentColor'
-						class='w-6 h-6'>
-						<path
-							stroke-linecap='round'
-							stroke-linejoin='round'
-							d='M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z'
-						/>
-						<path
-							stroke-linecap='round'
-							stroke-linejoin='round'
-							d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z'
-						/>
-					</svg>
-					<strong>QUITO - ECUADOR</strong>
-					<p className='text-slate-400'>
+					<p className='flex items-center gap-1 my-3'>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							fill='none'
+							viewBox='0 0 24 24'
+							stroke-width='1.5'
+							stroke='currentColor'
+							class='w-6 h-6'>
+							<path
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								d='M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z'
+							/>
+							<path
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z'
+							/>
+						</svg>
+						<strong className='text-base'>QUITO - ECUADOR</strong>
+					</p>
+					<p className='text-xs text-slate-400'>
 						© 2024 NEW STYLE, Inc. Todos los derechos reservados
 					</p>
 				</div>
-
-				<ul className='flex flex-col gap-5 text-slate-400'>
-					<li>Guias</li>
-					<li>Términos de venta</li>
-					<li>Términos de uso</li>
-					<li>Política de privacidad de NEW STYLE</li>
-					<li>Tus selecciones de privacidad</li>
-					<li>EC. Supply Chains Act</li>
-				</ul>
 			</footer>
 		</>
 	);
