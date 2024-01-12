@@ -1,0 +1,41 @@
+.slide-home {
+	width: 500%;
+	animation: slide-home-images infinite 20s alternate ease-in-out;
+}
+
+@keyframes slide-home-images {
+	0% {
+		margin-left: 0;
+	}
+	20% {
+		margin-left: 0;
+	}
+
+	25% {
+		margin-left: -100%;
+	}
+	40% {
+		margin-left: -100%;
+	}
+
+	45% {
+		margin-left: -200%;
+	}
+	60% {
+		margin-left: -200%;
+	}
+
+	65% {
+		margin-left: -300%;
+	}
+	80% {
+		margin-left: -300%;
+	}
+
+	85% {
+		margin-left: -400%;
+	}
+	100% {
+		margin-left: -400%;
+	}
+}
