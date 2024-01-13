@@ -14,6 +14,8 @@ function App() {
 	const [isOpenAboutUs, setIsOpenAboutUs] = useState(false);
 	const [isOpenPromotionsDiscounts, setIsOpenPromotionsDiscounts] = useState(false);
 
+	const [isOpenChatBox, setIsOpenChatBox] = useState(false);
+
 	const trendClothes = [
 		{
 			id: 1,
@@ -209,6 +211,7 @@ function App() {
 				)}
 			</header>
 
+			{/* DESCUENTOS */}
 			<a
 				href='#'
 				className='flex flex-col items-center gap-1 p-2 bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 text-slate-100'>
@@ -227,6 +230,8 @@ function App() {
 					Ts&Cs.
 				</p>
 			</a>
+
+			{/* HERO */}
 			<article className='flex flex-col overflow-hidden md:flex-row'>
 				<p className='relative w-full overflow-hidden md:w-1/2'>
 					<ul className='flex overflow-hidden flex-nowrap h-96 md:w-1/2 slide-home'>
@@ -363,20 +368,122 @@ function App() {
 				</div>
 			</main>
 
-			<article className='p-4 text-justify'>
+			{/* CHAT CONTAINER */}
+			<div
+				className='fixed right-0 z-10 p-4 bg-red-500 rounded-full cursor-pointer bottom-16 text-slate-200'
+				onClick={() => setIsOpenChatBox(true)}>
+				<svg
+					xmlns='http://www.w3.org/2000/svg'
+					fill='none'
+					viewBox='0 0 24 24'
+					stroke-width='1.5'
+					stroke='currentColor'
+					class='w-7 h-7 '>
+					<path
+						stroke-linecap='round'
+						stroke-linejoin='round'
+						d='M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155'
+					/>
+				</svg>
+
+				<div
+					className={`fixed top-0 left-0 w-full bg-white cursor-default h-full text-slate-900 p-4 ${
+						isOpenChatBox ? 'block' : 'hidden'
+					}`}>
+					<p className='flex items-center gap-1 pb-2 border-b border-slate-500'>
+						<img
+							className='object-cover object-center w-10 h-10 border border-white rounded-full'
+							src='https://roast.dating/images/ben.webp'
+							alt=''
+						/>
+						<img
+							className='object-cover object-center w-10 h-10 -ml-3 border border-white rounded-full'
+							src='https://img.freepik.com/premium-photo/happy-positive-girl-braces-teeth-young-beautiful-woman-outdoors-summer-sunny-park-smiling_157823-2285.jpg'
+							alt=''
+						/>
+						<img
+							className='object-cover object-center w-10 h-10 -ml-3 border border-white rounded-full'
+							src='https://img.freepik.com/free-photo/handsome-man-with-glasses_144627-18665.jpg'
+							alt=''
+						/>
+						<span className='ml-4 font-bold'>Chat</span>
+					</p>
+					<div className='text-black'>
+						<p>Buen día, en que puedo ayudarlo el día de hoy?</p>
+						<p>hola, como estas?</p>
+					</div>
+
+					<div className='fixed bottom-0 left-0 flex items-center w-full gap-4 p-4'>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							fill='none'
+							viewBox='0 0 24 24'
+							stroke-width='1.5'
+							stroke='currentColor'
+							class='w-6 h-6'>
+							<path
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								d='M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z'
+							/>
+							<path
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								d='M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z'
+							/>
+						</svg>
+						<input
+							type='text'
+							className='p-1 border rounded-xl grow border-slate-900'
+						/>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							fill='none'
+							viewBox='0 0 24 24'
+							stroke-width='1.5'
+							stroke='currentColor'
+							class='w-6 h-6'>
+							<path
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								d='M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5'
+							/>
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<span
+				className={`fixed top-4 right-4 z-20 bg-slate-700 text-white hover:bg-opacity-50 bg-opacity-25 p-1 rounded-full cursor-pointer ${
+					isOpenChatBox ? 'block' : 'hidden'
+				}`}
+				onClick={() => setIsOpenChatBox(false)}>
+				<svg
+					xmlns='http://www.w3.org/2000/svg'
+					fill='none'
+					viewBox='0 0 24 24'
+					stroke-width='1.5'
+					stroke='currentColor'
+					class='w-6 h-6'>
+					<path
+						stroke-linecap='round'
+						stroke-linejoin='round'
+						d='M6 18 18 6M6 6l12 12'
+					/>
+				</svg>
+			</span>
+
+			<article className='p-5 text-justify'>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates est laudantium
 				quo explicabo ullam. Nesciunt excepturi velit eum iure enim hic quisquam dolores
 				alias ipsa, facere voluptatem a dolore laboriosam! Ex eos aliquid quisquam minus
 				fuga corporis temporibus accusantium qui saepe nihil pariatur, officia alias
 				sequi, aspernatur laudantium sunt optio. Sed, eaque quibusdam nostrum explicabo
-				commodi dolores doloribus tempora laborum. Earum reprehenderit praesentium quia
-				magnam doloribus aperiam voluptatum alias aliquid molestiae in aliquam molestias
-				dolorem, ipsam dignissimos! Excepturi, aspernatur nostrum iste itaque tempore
-				perferendis dignissimos beatae ad commodi, iusto nesciunt.
+				commodi dolores doloribus tempora laborum.
 			</article>
 
 			<h3 className='p-2 mt-8 text-xl font-bold'>TENDENCIAS</h3>
-			<div className='flex gap-1 pb-4 mx-2 overflow-x-auto flex-nowrap'>
+			<div className='z-0 flex gap-1 pb-4 mx-2 overflow-x-auto flex-nowrap'>
 				{trendClothes.map((item) => {
 					return (
 						<article
@@ -400,19 +507,45 @@ function App() {
 				})}
 			</div>
 
-			<aside className='p-10 my-20'>
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda consequatur
-				ducimus ex aperiam facilis corrupti similique veniam. Esse aspernatur reiciendis
-				aut doloremque, non maiores illum est ea tenetur necessitatibus rerum? Aut
-				asperiores id atque inventore corrupti. Accusamus ex quas eius? Suscipit ratione
-				accusantium consequatur labore aperiam possimus, corrupti error odit incidunt
-				itaque. Ea odit ab maxime eius dolor vitae delectus! Sit quae a et at numquam rem
-				odio quis consequuntur quasi laudantium magnam sequi perspiciatis fugiat, aliquid
-				vel nobis similique, fugit nulla. Odit voluptas atque provident autem laudantium
-				error incidunt? Voluptatibus ipsum eos commodi exercitationem quia ipsa dolorem
-				minus? Sapiente officiis temporibus, numquam tenetur consequatur nihil incidunt
-				deserunt omnis minus sint id ut hic dolorum illo animi. Recusandae, architecto
-				suscipit.
+			<aside className='items-center p-4 my-10 space-y-8 sm:flex'>
+				<img
+					className='w-full sm:w-2/3'
+					src='https://www.untuckit.com/cdn/shop/files/no-nearby-store.png?v=1626122497'
+					alt=''
+				/>
+				<div className='space-y-4 sm:px-4 md:px-8 lg:px-16'>
+					<p className='flex items-center gap-2 text-lg'>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							fill='none'
+							viewBox='0 0 24 24'
+							stroke-width='1.5'
+							stroke='currentColor'
+							class='w-6 h-6 text-orange-700'>
+							<path
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								d='M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z'
+							/>
+							<path
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z'
+							/>
+						</svg>
+						<strong>VISITANOS</strong>
+					</p>
+
+					<p className=''>
+						Drop by one of our stores and get the full UNTUCKit experience.
+					</p>
+					<br />
+					<a
+						href='#'
+						className='font-semibold text-orange-700'>
+						Find your nearest store
+					</a>
+				</div>
 			</aside>
 
 			<footer className='flex flex-col grid-cols-3 gap-4 px-4 py-8 text-sm text-white bg-slate-900 sm:grid'>
@@ -740,7 +873,7 @@ function App() {
 							<a
 								href='#'
 								className='hover:text-white'>
-								First REsponders & Medical Professionals
+								First Responders & Medical Professionals
 							</a>
 						</li>
 						<li>
