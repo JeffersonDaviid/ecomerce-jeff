@@ -75,6 +75,15 @@ function App() {
 		},
 	];
 
+	const chat = [
+		{id: 1, message: 'Hola, ¿cómo podemos ayudarte?', fecha: '12:00'},
+		{
+			id: 2,
+			message: 'Hola, ¿cómo podemos ayudarte?',
+			fecha: '12:00',
+		},
+	];
+
 	return (
 		<>
 			<header className='shadow'>
@@ -387,7 +396,7 @@ function App() {
 				</svg>
 
 				<div
-					className={`fixed top-0 left-0 w-full bg-white cursor-default h-full text-slate-900 p-4 ${
+					className={`fixed flex flex-col bottom-0 right-0 w-full bg-white cursor-default h-full text-slate-900 p-4 md:w-4/12 md:h-2/3 md:bottom-5 md:pb-1 lg:w-3/12 rounded-lg shadow-lg ${
 						isOpenChatBox ? 'block' : 'hidden'
 					}`}>
 					<p className='flex items-center gap-1 pb-2 border-b border-slate-500'>
@@ -408,19 +417,95 @@ function App() {
 						/>
 						<span className='ml-4 font-bold'>Chat</span>
 					</p>
-					<div className='text-black'>
-						<p>Buen día, en que puedo ayudarlo el día de hoy?</p>
-						<p>hola, como estas?</p>
+
+					<div className='flex flex-col h-full gap-2 pt-2 overflow-y-auto grow sm:h-1/3 text-slate-900'>
+						<p className='px-2 py-1 mr-auto bg-gray-200 rounded-bl-lg rounded-r-md w-fit'>
+							<span>Buen día, en que puedo ayudarlo?</span>
+							<br />
+							<span className='text-xs text-slate-500'>10:00</span>
+						</p>
+
+						<p className='self-end px-2 py-1 ml-auto rounded-br-lg text-end bg-slate-900 rounded-l-md'>
+							<span className='text-slate-200'>hola, como estas?</span>
+							<br />
+							<span className='text-xs text-slate-400'>10:00</span>
+						</p>
+						<p className='px-2 py-1 mr-auto bg-gray-200 rounded-bl-lg rounded-r-md w-fit'>
+							<span>Buen día, en que puedo ayudarlo?</span>
+							<br />
+							<span className='text-xs text-slate-500'>10:00</span>
+						</p>
+
+						<p className='self-end px-2 py-1 ml-auto rounded-br-lg text-end bg-slate-900 rounded-l-md'>
+							<span className='text-slate-200'>hola, como estas?</span>
+							<br />
+							<span className='text-xs text-slate-400'>10:00</span>
+						</p>
+						<p className='px-2 py-1 mr-auto bg-gray-200 rounded-bl-lg rounded-r-md w-fit'>
+							<span>Buen día, en que puedo ayudarlo?</span>
+							<br />
+							<span className='text-xs text-slate-500'>10:00</span>
+						</p>
+
+						<p className='self-end px-2 py-1 ml-auto rounded-br-lg text-end bg-slate-900 rounded-l-md'>
+							<span className='text-slate-200'>hola, como estas?</span>
+							<br />
+							<span className='text-xs text-slate-400'>10:00</span>
+						</p>
+						<p className='px-2 py-1 mr-auto bg-gray-200 rounded-bl-lg rounded-r-md w-fit'>
+							<span>Buen día, en que puedo ayudarlo?</span>
+							<br />
+							<span className='text-xs text-slate-500'>10:00</span>
+						</p>
+
+						<p className='self-end px-2 py-1 ml-auto rounded-br-lg text-end bg-slate-900 rounded-l-md'>
+							<span className='text-slate-200'>hola, como estas?</span>
+							<br />
+							<span className='text-xs text-slate-400'>10:00</span>
+						</p>
+						<p className='px-2 py-1 mr-auto bg-gray-200 rounded-bl-lg rounded-r-md w-fit'>
+							<span>Buen día, en que puedo ayudarlo?</span>
+							<br />
+							<span className='text-xs text-slate-500'>10:00</span>
+						</p>
+
+						<p className='self-end px-2 py-1 ml-auto rounded-br-lg text-end bg-slate-900 rounded-l-md'>
+							<span className='text-slate-200'>hola, como estas?</span>
+							<br />
+							<span className='text-xs text-slate-400'>10:00</span>
+						</p>
+						<p className='px-2 py-1 mr-auto bg-gray-200 rounded-bl-lg rounded-r-md w-fit'>
+							<span>Buen día, en que puedo ayudarlo?</span>
+							<br />
+							<span className='text-xs text-slate-500'>10:00</span>
+						</p>
+
+						<p className='self-end px-2 py-1 ml-auto rounded-br-lg text-end bg-slate-900 rounded-l-md'>
+							<span className='text-slate-200'>hola, como estas?</span>
+							<br />
+							<span className='text-xs text-slate-400'>10:00</span>
+						</p>
+						<p className='px-2 py-1 mr-auto bg-gray-200 rounded-bl-lg rounded-r-md w-fit'>
+							<span>Buen día, en que puedo ayudarlo?</span>
+							<br />
+							<span className='text-xs text-slate-500'>10:00</span>
+						</p>
+
+						<p className='self-end px-2 py-1 ml-auto rounded-br-lg text-end bg-slate-900 rounded-l-md'>
+							<span className='text-slate-200'>hola, como estas?</span>
+							<br />
+							<span className='text-xs text-slate-400'>10:00</span>
+						</p>
 					</div>
 
-					<div className='fixed bottom-0 left-0 flex items-center w-full gap-4 p-4'>
+					<div className='bottom-0 left-0 flex items-center w-full gap-4 py-2 bg-inherit'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							fill='none'
 							viewBox='0 0 24 24'
 							stroke-width='1.5'
 							stroke='currentColor'
-							class='w-6 h-6'>
+							class='w-6 h-6 cursor-pointer'>
 							<path
 								stroke-linecap='round'
 								stroke-linejoin='round'
@@ -434,7 +519,7 @@ function App() {
 						</svg>
 						<input
 							type='text'
-							className='p-1 border rounded-xl grow border-slate-900'
+							className='p-1 px-2 border rounded-xl grow border-slate-900'
 						/>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
@@ -442,7 +527,7 @@ function App() {
 							viewBox='0 0 24 24'
 							stroke-width='1.5'
 							stroke='currentColor'
-							class='w-6 h-6'>
+							class='w-6 h-6 cursor-pointer'>
 							<path
 								stroke-linecap='round'
 								stroke-linejoin='round'
@@ -454,8 +539,8 @@ function App() {
 			</div>
 
 			<span
-				className={`fixed top-4 right-4 z-20 bg-slate-700 text-white hover:bg-opacity-50 bg-opacity-25 p-1 rounded-full cursor-pointer ${
-					isOpenChatBox ? 'block' : 'hidden'
+				className={`fixed top-4 right-4 z-20 bg-slate-700 text-white hover:bg-opacity-50 bg-opacity-25 p-1 rounded-full cursor-pointer md:top-1/3 ${
+					isOpenChatBox ? 'inline' : 'hidden'
 				}`}
 				onClick={() => setIsOpenChatBox(false)}>
 				<svg
@@ -488,14 +573,14 @@ function App() {
 					return (
 						<article
 							key={item.id}
-							className='relative flex-shrink-0 w-1/2 flex-grow-1 flex-basis-auto sm:w-1/3 md:w-1/4 lg:w-1/5'>
+							className='relative flex flex-col flex-shrink-0 w-1/2 flex-grow-1 flex-basis-auto sm:w-1/3 md:w-1/4 lg:w-1/5'>
 							<img
 								src={item.img}
 								alt={item.name}
 								className='w-full'
 							/>
 							<h3>{item.name}</h3>
-							<p>
+							<p className='mt-auto'>
 								<span className='mr-2 line-through'>${item.price.toFixed(2)}</span>
 								<strong className='text-red-600'>
 									${(item.price - item.price * (item.discount / 100)).toFixed(2)}
