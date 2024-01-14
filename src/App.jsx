@@ -86,7 +86,7 @@ function App() {
 
 	return (
 		<>
-			<header className='shadow'>
+			<header className='sticky top-0 z-10 shadow '>
 				<nav className='px-2 text-white bg-slate-700'>
 					<ul className='flex items-center justify-between h-12 gap-4 mx-auto sm:h-16 lg:max-w-5xl'>
 						<li
@@ -111,7 +111,7 @@ function App() {
 							<a href='#'></a>
 							<a
 								href='#'
-								className='text-xl font-bold'>
+								className='text-xl font-abrilFatface'>
 								JEFF
 							</a>
 						</li>
@@ -293,6 +293,7 @@ function App() {
 				</p>
 			</article>
 
+			{/* CARUSEL */}
 			<main className='flex flex-col items-center p-4'>
 				<h1 className='my-10 text-2xl font-bold text-center'>NEW STYLE FOR FAMILY</h1>
 				<div className='flex w-full gap-2 overflow-x-auto text-center sm:w-10/12 lg:w-4/'>
@@ -396,7 +397,7 @@ function App() {
 				</svg>
 
 				<div
-					className={`fixed flex flex-col bottom-0 right-0 w-full bg-white cursor-default h-full text-slate-900 p-4 md:w-4/12 md:h-2/3 md:bottom-5 md:pb-1 lg:w-3/12 rounded-lg shadow-lg ${
+					className={`fixed flex flex-col bottom-0 right-0 w-full bg-white cursor-default h-full text-slate-900 p-4 md:w-96 md:h-2/3 md:bottom-5 md:pb-1 rounded-lg shadow-lg ${
 						isOpenChatBox ? 'block' : 'hidden'
 					}`}>
 					<p className='flex items-center gap-1 pb-2 border-b border-slate-500'>
@@ -561,10 +562,7 @@ function App() {
 			<article className='p-5 text-justify'>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates est laudantium
 				quo explicabo ullam. Nesciunt excepturi velit eum iure enim hic quisquam dolores
-				alias ipsa, facere voluptatem a dolore laboriosam! Ex eos aliquid quisquam minus
-				fuga corporis temporibus accusantium qui saepe nihil pariatur, officia alias
-				sequi, aspernatur laudantium sunt optio. Sed, eaque quibusdam nostrum explicabo
-				commodi dolores doloribus tempora laborum.
+				alias ipsa, facere voluptatem a dolore laboriosam!
 			</article>
 
 			<h3 className='p-2 mt-8 text-xl font-bold'>TENDENCIAS</h3>
@@ -679,7 +677,7 @@ function App() {
 					</li>
 				</ul>
 
-				<ul className='flex justify-between gap-2 sm:flex-col'>
+				<ul className='flex items-center justify-between gap-2 sm:flex-col'>
 					<li>OBTENER AYUDA</li>
 					<ul className='flex-col hidden gap-1 sm:flex text-slate-400 '>
 						<li>
@@ -818,7 +816,7 @@ function App() {
 					</ul>
 				)}
 
-				<ul className='flex justify-between gap-2 sm:flex-col sm:justify-start'>
+				<ul className='flex items-center justify-between gap-2 sm:flex-col sm:justify-start'>
 					<li>ACERCA DE NEW STYLE</li>
 					<ul className='space-y-1.5 hidden sm:block text-slate-400'>
 						<li>
@@ -930,7 +928,7 @@ function App() {
 					</ul>
 				)}
 
-				<ul className='flex justify-between gap-2 sm:flex-col'>
+				<ul className='flex items-center justify-between gap-2 sm:flex-col'>
 					<li>PROMOCIONES Y DESCUENTOS</li>
 					<ul className='space-y-1.5 hidden sm:block text-slate-400'>
 						<li>
@@ -1159,6 +1157,10 @@ function App() {
 						© 2024 NEW STYLE, Inc. Todos los derechos reservados
 					</p>
 				</div>
+
+				<p className='my-16 text-4xl tracking-widest text-center font-abrilFatface'>
+					LUXE JEFF'S
+				</p>
 			</footer>
 		</>
 	);
