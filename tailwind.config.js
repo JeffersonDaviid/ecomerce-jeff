@@ -10,6 +10,9 @@ export default {
 			fontWeight: {
 				abrilWeight: [400],
 			},
+			height: {
+				120: '30rem',
+			},
 		},
 	},
 

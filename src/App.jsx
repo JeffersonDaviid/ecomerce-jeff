@@ -631,6 +631,99 @@ function App() {
 				</div>
 			</aside>
 
+			{/* COMPONENTE PARA VER DETALLES DE PRENDAS */}
+			<article className='flex flex-col overflow-hidden border-red-500 border0 lg:gap-28 md:flex-row'>
+				<div className='overflow-hidden md:w-1/2 lg:w-3/4'>
+					<div className='flex pb-4 overflow-hidden h-120 flex-nowrap '>
+						<img
+							className='w-full h-full md:w-1/2'
+							src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiWSvRY2spKnBnqxlHtG3HLt6xlrgo476AZndnrL65RGmfaWVs'
+							alt=''
+						/>
+						<img
+							className='w-full h-full md:w-1/2'
+							src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8unifo4pbCSMrm_PWPaHlSUjDLcNdH0aIb_fJUAbBnLkHcJT2'
+							alt=''
+						/>
+
+						<img
+							className='w-full h-full md:w-1/2'
+							src='https://tommy-europe.scene7.com/is/image/TommyEurope/MW0MW32726_YBH_alternate1?$b2c_updp_mainImage_540$'
+							alt=''
+						/>
+						<img
+							className='w-full h-full md:w-1/2'
+							src='https://tommy-europe.scene7.com/is/image/TommyEurope/MW0MW32726_YBH_alternate3?$b2c_updp_mainImage_540$'
+							alt=''
+						/>
+
+						<img
+							className='w-full h-full md:w-1/2'
+							src='https://tommy-europe.scene7.com/is/image/TommyEurope/MW0MW32726_YBH_alternate4?$b2c_updp_mainImage_540$'
+							alt=''
+						/>
+					</div>
+					<div className='flex justify-center gap-1 overflow-x-auto'>
+						<img
+							className='object-contain object-center w-20 h-24'
+							src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiWSvRY2spKnBnqxlHtG3HLt6xlrgo476AZndnrL65RGmfaWVs'
+							alt=''
+						/>
+						<img
+							className='object-contain object-center w-20 h-24'
+							src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8unifo4pbCSMrm_PWPaHlSUjDLcNdH0aIb_fJUAbBnLkHcJT2'
+							alt=''
+						/>
+
+						<img
+							className='object-contain object-center w-20 h-24'
+							src='https://tommy-europe.scene7.com/is/image/TommyEurope/MW0MW32726_YBH_alternate1?$b2c_updp_mainImage_540$'
+							alt=''
+						/>
+						<img
+							className='object-contain object-center w-20 h-24'
+							src='https://tommy-europe.scene7.com/is/image/TommyEurope/MW0MW32726_YBH_alternate3?$b2c_updp_mainImage_540$'
+							alt=''
+						/>
+
+						<img
+							className='object-contain object-center w-20 h-24'
+							src='https://tommy-europe.scene7.com/is/image/TommyEurope/MW0MW32726_YBH_alternate4?$b2c_updp_mainImage_540$'
+							alt=''
+						/>
+					</div>
+				</div>
+				<div className='px-4 space-y-4 md:w-1/2 lg:h-1/4'>
+					<h3 className='text-lg'>SUDADERA CON MONOTIPO HILFIGER BORDADO</h3>
+					<p>
+						<span className='line-through'>$ 199,00</span>{' '}
+						<strong className='text-red-600'>$ 129,00</strong>{' '}
+						<span className='text-slate-600'>(Iva inc.)</span>
+					</p>
+
+					<p>
+						<span>Talla:</span>
+
+						<div className='grid grid-cols-3 gap-2 '>
+							{['XS', 'S', 'M', 'L', 'XL', 'XXL'].map((size) => (
+								<span
+									key={size}
+									className='flex items-center justify-center h-10 border border-slate-600 hover:bg-orange-100'>
+									{size}
+								</span>
+							))}
+						</div>
+					</p>
+
+					<button className='w-full py-4 font-semibold bg-orange-400'>
+						PROBAR CON IA 🤖
+					</button>
+					<button className='w-full py-4 font-semibold text-white bg-slate-900 hover:bg-slate-950'>
+						AÑADIR A LA CESTA
+					</button>
+				</div>
+			</article>
+
 			<footer className='flex flex-col grid-cols-3 gap-4 px-4 py-8 text-sm text-white bg-slate-900 sm:grid'>
 				<ul className='pb-3 space-y-2 border-b-2 border-slate-300 sm:border-none'>
 					<li>
