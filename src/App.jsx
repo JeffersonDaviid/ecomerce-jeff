@@ -88,7 +88,7 @@ function App() {
 		<>
 			<header className='sticky top-0 z-10 shadow '>
 				<nav className='px-2 text-white bg-slate-700'>
-					<ul className='flex items-center justify-between h-12 gap-4 mx-auto sm:h-16 lg:max-w-5xl'>
+					<ul className='flex items-center justify-between h-12 gap-4 mx-auto sm:h-16 lg:max-w-7xl'>
 						<li
 							className='sm:hidden'
 							onClick={() => setShowMenuMobile(!showMenuMobile)}>
@@ -577,14 +577,16 @@ function App() {
 								alt={item.name}
 								className='w-full'
 							/>
-							<h3>{item.name}</h3>
-							<p className='mt-auto'>
-								<span className='mr-2 line-through'>${item.price.toFixed(2)}</span>
-								<strong className='text-red-600'>
-									${(item.price - item.price * (item.discount / 100)).toFixed(2)}
-								</strong>
-								<span className='absolute px-2 font-semibold text-white bg-red-500 top-2 right-2'>{` - ${item.discount}%`}</span>
-							</p>
+							<a href='#details'>
+								<h3>{item.name}</h3>
+								<p className='mt-auto'>
+									<span className='mr-2 line-through'>${item.price.toFixed(2)}</span>
+									<strong className='text-red-600'>
+										${(item.price - item.price * (item.discount / 100)).toFixed(2)}
+									</strong>
+									<span className='absolute px-2 font-semibold text-white bg-red-500 top-2 right-2'>{` - ${item.discount}%`}</span>
+								</p>
+							</a>
 						</article>
 					);
 				})}
@@ -632,69 +634,61 @@ function App() {
 			</aside>
 
 			{/* COMPONENTE PARA VER DETALLES DE PRENDAS */}
-			<article className='flex flex-col overflow-hidden border-red-500 border0 lg:gap-28 md:flex-row'>
-				<div className='overflow-hidden md:w-1/2 lg:w-3/4'>
-					<div className='flex pb-4 overflow-hidden h-120 flex-nowrap '>
+			<article
+				id='details'
+				className='flex flex-col border-red-500 border0 md:gap-8 lg:gap-16 md:flex-row my-96'>
+				<div className=' md:w-1/2 lg:w-4/6 md:pl-2'>
+					<div className='relative flex overflow-x-scroll overflow-y-hidden snap-mandatory snap-x md:snap-none sm:h-120'>
 						<img
-							className='w-full h-full md:w-1/2'
-							src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiWSvRY2spKnBnqxlHtG3HLt6xlrgo476AZndnrL65RGmfaWVs'
+							className='sticky left-0 object-cover object-center w-full sm:w-1/2 md:w-full lg:w-1/2 md:relative snap-center'
+							src='https://shoptommy.scene7.com/is/image/ShopTommy/78J8433_FAP_FNT?wid=576&hei=759&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp'
 							alt=''
 						/>
 						<img
-							className='w-full h-full md:w-1/2'
-							src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8unifo4pbCSMrm_PWPaHlSUjDLcNdH0aIb_fJUAbBnLkHcJT2'
-							alt=''
-						/>
-
-						<img
-							className='w-full h-full md:w-1/2'
-							src='https://tommy-europe.scene7.com/is/image/TommyEurope/MW0MW32726_YBH_alternate1?$b2c_updp_mainImage_540$'
-							alt=''
-						/>
-						<img
-							className='w-full h-full md:w-1/2'
-							src='https://tommy-europe.scene7.com/is/image/TommyEurope/MW0MW32726_YBH_alternate3?$b2c_updp_mainImage_540$'
+							className='sticky left-0 object-cover object-center w-full sm:w-1/2 md:w-full lg:w-1/2 md:relative snap-center'
+							src='https://shoptommy.scene7.com/is/image/ShopTommy/78J8433_FAP_BCK?wid=576&hei=759&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp'
 							alt=''
 						/>
 
 						<img
-							className='w-full h-full md:w-1/2'
-							src='https://tommy-europe.scene7.com/is/image/TommyEurope/MW0MW32726_YBH_alternate4?$b2c_updp_mainImage_540$'
+							className='sticky left-0 object-cover object-center w-full sm:w-1/2 md:w-full lg:w-1/2 md:relative snap-center'
+							src='https://shoptommy.scene7.com/is/image/ShopTommy/78J8433_FAP_DE1?wid=576&hei=759&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp'
+							alt=''
+						/>
+						<img
+							className='sticky left-0 object-cover object-center w-full sm:w-1/2 md:w-full lg:w-1/2 md:relative snap-center'
+							src='https://www.eloccidental.com.mx/incoming/gvhext-richard-burlton-htpmedsyzag-unsplash.jpg/ALTERNATES/LANDSCAPE_768/richard-burlton-HTpmedSyZag-unsplash.jpg'
 							alt=''
 						/>
 					</div>
-					<div className='flex justify-center gap-1 overflow-x-auto'>
+					<div className='flex justify-center gap-1 overflow-auto md:hidden'>
 						<img
-							className='object-contain object-center w-20 h-24'
-							src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiWSvRY2spKnBnqxlHtG3HLt6xlrgo476AZndnrL65RGmfaWVs'
+							className='object-contain object-center w-20 h-24 '
+							src='https://shoptommy.scene7.com/is/image/ShopTommy/78J8433_FAP_FNT?wid=576&hei=759&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp'
 							alt=''
 						/>
 						<img
 							className='object-contain object-center w-20 h-24'
-							src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8unifo4pbCSMrm_PWPaHlSUjDLcNdH0aIb_fJUAbBnLkHcJT2'
-							alt=''
-						/>
-
-						<img
-							className='object-contain object-center w-20 h-24'
-							src='https://tommy-europe.scene7.com/is/image/TommyEurope/MW0MW32726_YBH_alternate1?$b2c_updp_mainImage_540$'
-							alt=''
-						/>
-						<img
-							className='object-contain object-center w-20 h-24'
-							src='https://tommy-europe.scene7.com/is/image/TommyEurope/MW0MW32726_YBH_alternate3?$b2c_updp_mainImage_540$'
+							src='https://shoptommy.scene7.com/is/image/ShopTommy/78J8433_FAP_BCK?wid=576&hei=759&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp'
 							alt=''
 						/>
 
 						<img
 							className='object-contain object-center w-20 h-24'
-							src='https://tommy-europe.scene7.com/is/image/TommyEurope/MW0MW32726_YBH_alternate4?$b2c_updp_mainImage_540$'
+							src='https://shoptommy.scene7.com/is/image/ShopTommy/78J8433_FAP_DE1?wid=576&hei=759&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp'
+							alt=''
+						/>
+						<img
+							className='object-contain object-center w-20 h-24'
+							src='https://shoptommy.scene7.com/is/image/ShopTommy/78J8433_FAP_DE2?wid=576&hei=759&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp'
 							alt=''
 						/>
 					</div>
 				</div>
-				<div className='px-4 space-y-4 md:w-1/2 lg:h-1/4'>
-					<h3 className='text-lg'>SUDADERA CON MONOTIPO HILFIGER BORDADO</h3>
+				<div className='px-4 space-y-4 md:w-1/2 lg:w-2/6 lg:h-1/4'>
+					<h3 className='text-lg font-semibold'>
+						REGULAR FIT SOLID STRETCH OXFORD SHIRT
+					</h3>
 					<p>
 						<span className='line-through'>$ 199,00</span>{' '}
 						<strong className='text-red-600'>$ 129,00</strong>{' '}
@@ -708,7 +702,7 @@ function App() {
 							{['XS', 'S', 'M', 'L', 'XL', 'XXL'].map((size) => (
 								<span
 									key={size}
-									className='flex items-center justify-center h-10 border border-slate-600 hover:bg-orange-100'>
+									className='flex items-center cursor-pointer justify-center h-10 border select-none border-slate-600 hover:bg-orange-100'>
 									{size}
 								</span>
 							))}
@@ -716,12 +710,83 @@ function App() {
 					</p>
 
 					<button className='w-full py-4 font-semibold bg-orange-400'>
-						PROBAR CON IA 🤖
+						<a href='#ia'>PROBAR CON IA 🤖</a>
 					</button>
 					<button className='w-full py-4 font-semibold text-white bg-slate-900 hover:bg-slate-950'>
 						AÑADIR A LA CESTA
 					</button>
 				</div>
+			</article>
+
+			{/* COMPONENTE PARA VER INTELIGENCIA ARTIFICIAL */}
+			<article id='ia'>
+				<svg
+					xmlns='http://www.w3.org/2000/svg'
+					fill='none'
+					viewBox='0 0 24 24'
+					stroke-width='1.5'
+					stroke='currentColor'
+					class='w-6 h-6'>
+					<path
+						stroke-linecap='round'
+						stroke-linejoin='round'
+						d='M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5'
+					/>
+				</svg>
+				<input
+					type='file'
+					placeholder='Añadir imagen'
+				/>
+
+				<p>
+					<span>Talla:</span>
+				</p>
+			</article>
+
+			{/* Realiza una ui para personalizar una prenda de vestir, las funcionalidades */}
+			{/* que debe tener son: subir una imagen, elegir más imagenes, boton comprar, una visualizacion de la fotografia con capacidad de hacer zoom	*/}
+			{/* COMPONENTE PARA PERSONALIZAR PRENDA DE VESTIR */}
+			<article className='flex flex-col items-center justify-center gap-4'>
+				<div className='relative flex flex-col items-center justify-center w-full h-96'>
+					<img
+						className='absolute object-cover object-center w-full h-full'
+						src='https://www.untuckit.com/cdn/shop/files/no-nearby-store.png?v=1626122497'
+						alt=''
+					/>
+					<div className='absolute flex flex-col items-center justify-center w-full h-full bg-black bg-opacity-50'>
+						<h3 className='text-2xl font-semibold text-white'>PERSONALIZA TU PRENDA</h3>
+						<p className='text-lg text-white'>Sube una imagen y personaliza tu prenda</p>
+						<button className='px-4 py-2 mt-4 font-semibold text-white bg-orange-400 rounded-full'>
+							Subir imagen
+						</button>
+					</div>
+				</div>
+				{/* input para subir una archivo solo de imagen, ui personalizada */}
+				<input
+					type='file'
+					placeholder='Añadir imagen'
+				/>
+
+				{/* boton comprar */}
+				<button className='px-4 py-2 font-semibold text-white bg-slate-900 rounded-full'>
+					Comprar
+				</button>
+
+				<article>
+					{[
+						'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkNCDPG7NHZzeBR1WkuRGOq1y1I4xPgYKKl4BsYuHH1BHQh0Ar',
+						'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxnHYxI7DEXTnCkoGGLa2cw4NmPscvao8_70Lhoms-Xtg0M0Ij',
+						'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4COk-zkgSV8b-UsPRDnysQ9_i3yULmr0Oj9tJ5xrU7L9PIb1E',
+						'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRaV3tkAoYYmn05DwqcdsAKmPnbT--20yyn5qhaVhpmHroI4UY',
+						'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfDQisLtYfRYnq15X4tA04FWF5mvrcfMQHvdB62_uNy-hnLkzE',
+					].map((src, index) => (
+						<img
+							key={index}
+							src={src}
+							alt=''
+						/>
+					))}
+				</article>
 			</article>
 
 			<footer className='flex flex-col grid-cols-3 gap-4 px-4 py-8 text-sm text-white bg-slate-900 sm:grid'>
@@ -770,7 +835,7 @@ function App() {
 					</li>
 				</ul>
 
-				<ul className='flex items-center justify-between gap-2 sm:flex-col'>
+				<ul className='flex items-center justify-between gap-2 sm:items-start sm:flex-col'>
 					<li>OBTENER AYUDA</li>
 					<ul className='flex-col hidden gap-1 sm:flex text-slate-400 '>
 						<li>
@@ -909,7 +974,7 @@ function App() {
 					</ul>
 				)}
 
-				<ul className='flex items-center justify-between gap-2 sm:flex-col sm:justify-start'>
+				<ul className='flex items-center justify-between gap-2 sm:items-start sm:justify-start sm:flex-col'>
 					<li>ACERCA DE NEW STYLE</li>
 					<ul className='space-y-1.5 hidden sm:block text-slate-400'>
 						<li>
@@ -1021,7 +1086,7 @@ function App() {
 					</ul>
 				)}
 
-				<ul className='flex items-center justify-between gap-2 sm:flex-col'>
+				<ul className='flex items-center justify-between gap-2 sm:items-start sm:flex-col'>
 					<li>PROMOCIONES Y DESCUENTOS</li>
 					<ul className='space-y-1.5 hidden sm:block text-slate-400'>
 						<li>
